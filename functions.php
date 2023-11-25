@@ -60,7 +60,14 @@ function widget_areas(){
     );
 }
 
-add_action('widgets_init', 'widget_areas')
+add_action('widgets_init', 'widget_areas');
+
+function theme_name_scripts() {
+    wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/flexslider.css' );
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'flexsliderf', get_template_directory_uri() . '/jquery.flexslider.js', array('jquery'), '', true );
+}
+add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
 ?>
 

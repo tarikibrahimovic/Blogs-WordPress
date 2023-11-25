@@ -772,3 +772,23 @@ div.comment:first-of-type {
 .page-numbers:hover, .next.page-numbers:hover {
     background-color: #555;
 }
+
+/* .post-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.post-thumbnail {
+    flex: 1;
+}
+
+.post-title {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.content-header{
+    display: flex;
+    flex-direction: row;
+} */

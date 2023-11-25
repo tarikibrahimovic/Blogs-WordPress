@@ -39,10 +39,13 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
+    margin: 0;
     line-height: 1.15;
 }
 body {
@@ -100,7 +103,7 @@ h6 {
     top: 0;
     height: 100vh;
     width: var(--sidebar-width);
-    background: var(--primary);
+    background-color: #1f2429;
     color: #fff
 }
 .header .site-title {
@@ -210,8 +213,12 @@ h6 {
     color: #fff
 }
 .gradient{
-    background: rgb(43,43,43);
-    background: linear-gradient(151deg, var(--orange) 0%, var(--pink) 35%,var(--primary) 100%) !important;
+    background: rgb(31,36,41);
+    /* background: linear-gradient(151deg, var(--orange) 0%, var(--pink) 35%,var(--primary) 100%) !important; */
+    /* background-color: #28a745; */
+}
+.zaglavlje{
+    background: #1F2429;
 }
 .content .post .title {
     font-size: 1.275rem
@@ -730,4 +737,38 @@ div.comment:first-of-type {
 .comment-reply-title small a:focus,
 .comment-reply-title small a:hover {
 	text-decoration: underline;
+}
+
+/* General styling for the navigation */
+.navigation {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styling for the page numbers */
+.page-numbers {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #333;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+/* Styling for the current page number */
+.page-numbers.current {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styling for the next page link */
+.next.page-numbers {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Hover effect for the page numbers and next link */
+.page-numbers:hover, .next.page-numbers:hover {
+    background-color: #555;
 }

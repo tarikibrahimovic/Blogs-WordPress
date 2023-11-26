@@ -792,3 +792,14 @@ div.comment:first-of-type {
     display: flex;
     flex-direction: row;
 } */
+
+.custom-field {
+    font-size: 2em; /* Make the text larger */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    color: white; /* Make the text color white */
+    background-color: black; /* Make the background color black */
+    padding: 20px; /* Add some padding */
+    border: 5px solid white; /* Add a white border */
+    margin-bottom: 20px; /* Add some margin to the bottom */
+}

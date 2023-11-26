@@ -27,6 +27,17 @@
         <span class="comment"><a href="#comments"><i class='fa fa-comment'></i> <?php comments_number(); ?></a></span>
     </div>
 
+
+
+        <?php
+        $custom_field_value = get_post_meta( get_the_ID(), 'Type of exercise', true );
+        if ( ! empty( $custom_field_value ) ) {
+            echo '<div class="custom-field">';
+            echo '<h2>' . $custom_field_value . '</h2>';
+            echo '</div>';
+        }
+        ?>
+        
     <!-- Display the comments template -->
     <?php comments_template(); ?>
 </div>

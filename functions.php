@@ -69,5 +69,14 @@ function theme_name_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
+function custom_field_shortcode($atts) {
+    global $post;
+    $name = $atts['name'];
+    if (empty($name)) return '';
+    return get_post_meta($post->ID, $name, true);
+}
+add_shortcode('custom_field', 'custom_field_shortcode');
+
+
 ?>
 
